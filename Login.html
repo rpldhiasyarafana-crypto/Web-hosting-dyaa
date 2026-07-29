@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- CSS BOOTSTRAP -->
+     <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" 
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+     />
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        :root{
+            --color1: #fff4f8;
+            --color2:#e5bbbf;
+            --color3: #cea8ac;
+            --color4: #b9888d;
+            --color5:#a36c72;
+            --color6: #9a555c;
+            --color7: #fac5c4;
+            --color8: #fddbd9;
+
+        }
+        body{
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff4f8, #fee7f3);
+            display: flex;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .login-container {
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px black;
+            overflow: hidden;
+        }
+        .col-lg-6{
+            padding: 20px 50px;
+        }
+        .form-control, .input-group-text {
+            border: 1px solid #a36c72;
+            background-color:white;
+            height: 40px;
+        }
+        textarea{
+            height: 80px !important;
+        }
+        .fa-check-circle{
+            color:#a36c72;
+        }
+        .form-control:focus{
+            border: 1px solid #b9888d;
+            box-shadow: 0 0 0 0.2rem #cea8ac;
+        }
+        .btn-custom {
+            padding: 5px 10px;
+            width: 100%;
+            border: #a36c72 2px solid;
+            background-color: #ffffff;
+            color: #99535a;
+            border-radius: 5px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container mx-auto">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="d-flex justify-content-center">
+                        <img 
+                        src="images/logo.jpeg" 
+                        alt=""
+                        class="logo d-flex mb-5"
+                        width="250px"
+                        />
+                    </span>
+                    <h2 class="text-center fw-bold mb-4">
+                        Selamat Datang di Dangao's Bakery
+                    </h2>
+                    <p class="text-center fs-5 mb-4">
+                        Tempat pemesanan kue, roti, pastry, dll
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 fs-5">
+                            <i class="fa-solid fa-check-double" style="color: #99535a;"></i>
+                            Harga terjangkau
+                        </li>
+                        <li class="mb-2 fs-5">
+                            <i class="fa-solid fa-check-double"  style="color: #99535a;"></i>
+                             Aman
+                        </li>
+                        <li class="mb-2 fs-5">
+                            <i class="fa-solid fa-check-double"  style="color: #99535a;"></i>
+                            Sudah BPOM
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" style="background-color: var(--color8);">
+                    <div class="login-right">
+                        <h3 class="text-center my-3 fw-bold" style="color: var(--color4);">
+                        Format login toko Dangao's Bakery online</h3>
+                        <h5 class="text-center mb-5" style="color: var(--color4);">masuk ke akun anda</h5>
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="" class="form-label">nama_lengkap</label>
+                                <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">username</label>
+                                <input type="text" name="username" id="username" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="no_hp" class="form-label">No. Telepon</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">+62</span>
+                                    <input type="number" class="form-control" id="no_hp" name="no_hp" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">password</label>
+                                <input type="password" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Alamat</label>
+                                <textarea type="text" name="Alamat" id="Alamat" class="form-control" required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" id="agreeterms" class="form-check-input" required>
+                                <label for="agreeterms" class="form-check-label">
+                                    Saya setuju dengan syarat &dan ketentuan
+                                </label>
+                            </div>
+                            <div class="mb-3 pt-3">
+                                <button type="submit" class="btn-custom">
+                                    Daftarkan
+                                </button>
+                                <p class="text-center mt-3">
+                                    Sudah punya akun?
+                                    <a href="login.html" style="color: #000000;">Login</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS BOOTSTRAP -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
